@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kartify">
+    <meta name="keywords" content="kartify">
+    <meta name="author" content="kartify">
+    <link rel="manifest" href="https://themes.pixelstrap.com/pwa/kartify/manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Ecobikes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#2777FC">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="kartify">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- font link -->
+    <link rel="stylesheet" href="assets/css/br-hendrix.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" id="rtl-link" href="assets/css/vendors/bootstrap.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/swiper-bundle.min.css">
+
+    <!-- iconsax icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <!-- <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div> -->
+    <!-- loader end -->
+
+    <!-- header start -->
+    <!-- <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a onclick="history.back();">
+                    <img class="img-fluid icon-btn back-arrow" src="assets/images/svg/back-arrow.svg" alt="back-arrow">
+                </a>
+                <h3>Envios</h3>
+            </div>
+        </div>
+    </header> -->
+    <!-- header end -->
+
+    <!-- header start -->
+    <header class="header">
+        <div class="custom-container">
+            <div class="head-content">
+                <a href="home.html#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+
+                <a href="location.html" class="header-location">
+                    <h6>Ubicación</h6>
+
+                    <div class="location-content">
+                        <img class="img-fluid location" src="assets/images/svg/location.svg" alt="location">
+                        <h5>Santiago, Chile</h5>
+                        <i class="iconsax d-arrow" data-icon="chevron-down"></i>
+                    </div>
+                </a>
+                <div class="ms-auto d-flex align-items-center gap-2">
+                    <a href="search.html">
+                        <i class="iconsax icon-btn" data-icon="search-normal-2"></i>
+                    </a>
+                    <a href="notification.html">
+                        <i class="iconsax icon-btn notification-icon" data-icon="bell-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- profile section starts -->
+    <section class="pt-0">
+        <div class="profile-background edit-profile-bg">
+            <div class="profile-part mt-2">
+                <div class="profile-image">
+                    <img id="output" class="img-fluid profile-pic" src="assets/images/avatar/box.png" alt="11">
+                    <i class="iconsax edit-icon" data-icon="camera"></i>
+                    <input id="file" type="file" onchange="loadFile(event)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-b-space">
+        <div class="custom-container">
+            <form class="theme-form profile-form">
+                <div class="form-group mt-0">
+                    <label class="form-label" for="inputname">Dirección de origen</label>
+                    <input type="text" class="form-control wo-icon" id="inputname" value="Smitha Williams"
+                        placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="inputemail">Dirección de destino</label>
+                    <input type="email" class="form-control wo-icon" id="inputemail" value="smitha01@example.com"
+                        placeholder="Ingrese su correo">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="inputnumber">Peso (máx 20 kg)</label>
+                    <input type="Number" class="form-control wo-icon" id="inputnumber" value="20Kg" max="20" min="1"
+                        placeholder="Peso del paquete">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label title-color">Género</label>
+                </div>
+
+                <div class=" d-flex align-items-center gap-5">
+                    <div class="form-check">
+                        <input class="form-check-input ms-auto" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input ms-auto" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Femenino
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- <div class="fixed-btn-grp">
+            <div class="custom-container">
+                <a href="account.html" class="btn btn-mid theme-btn w-100">Update Profile</a>
+            </div>
+        </div> -->
+    </section>
+      <ul class="bottom-menu" style="display: flex; justify-content: center; gap: 100px;">
+    
+       
+
+        <li>
+            <a href="wishlist.html" class="active">
+                <!-- <i class="fa fa-bicycle"></i> -->
+                  <i class="fas fa-bicycle" style="font-size: 20px !important; color: #49862F"></i>
+        
+                <!-- <i class="iconsax text-content" data-icon="heart"></i> -->
+                <h6>Envíos</h6>
+            </a>
+        </li>
+           <li>
+            <a href="home.html" class="">
+                <i class="iconsax text-content" style="font-size: 20px !important; " data-icon="shopping-cart"></i>
+                <h6>Tienda</h6>
+            </a>
+        </li>
+
+    </ul>
+   <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="assets/images/logo/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <a href="edit-profile.html" class="profile-part">
+                <img class="img-fluid profile-pic" src="assets/images/avatar/1.png" alt="p8">
+                <div>
+                    <h3>Smitha Williams</h3>
+                    <span>Editar cuenta</span>
+                </div>
+            </a>
+            <ul class="link-section switch-section">
+                <li class="active">
+                    <a href="home.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="home-2"></i>
+                        <h3>Inicio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="grid-apps"></i>
+                        <h3>Categoría</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="shopping-cart"></i>
+
+                        <h3>Carrito</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="wishlist.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="heart"></i>
+                        <h3>Lista de deseos</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="user-2"></i>
+                        <h3>Perfil</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="book-closed"> </i>
+                        <h3>Plantillas</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="elements-page.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="document-text-1"> </i>
+                        <h3> Elementos</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="pages">
+                        <i class="iconsax sidebar-icon" data-icon="repeat"> </i>
+                        <h3>RTL</h3>
+                    </div>
+                    <div class="switch-btn">
+                        <input id="dir-switch" type="checkbox">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pages">
+                        <i class="iconsax sidebar-icon" data-icon="brush-3"> </i>
+                        <h3>Oscuro</h3>
+                    </div>
+                    <div class="switch-btn">
+                        <input id="dark-switch" type="checkbox">
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Cerrar sesión</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- profile section end -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- iconsax icon -->
+    <script src="assets/js/iconsax-icon.js"></script>
+
+    <!-- template-setting js -->
+    <script src="assets/js/template-setting.js"></script>
+
+    <!-- image change js -->
+    <script src="assets/js/image-change.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

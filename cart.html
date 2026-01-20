@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ecobikes - Mi carrito">
+    <meta name="keywords" content="Ecobikes, carrito, comprar">
+    <meta name="author" content="Ecobikes">
+    <link rel="manifest" href="https://themes.pixelstrap.com/pwa/kartify/manifest.json">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Ecobikes - Mi carrito</title>
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png">
+    <meta name="theme-color" content="#2777FC">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Ecobikes">
+    <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- font link -->
+    <link rel="stylesheet" href="assets/css/br-hendrix.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" id="rtl-link" href="assets/css/vendors/bootstrap.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/swiper-bundle.min.css">
+
+    <!-- iconsax icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/iconsax.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- loader start-->
+    <!-- <div class="loader-wrapper" id="loader">
+        <span class="loader"></span>
+    </div> -->
+    <!-- loader end -->
+
+    <!-- header start -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="cart.html#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                    <i class="iconsax" data-icon="text-align-left"></i>
+                </a>
+                <h3>Mi carrito <span class="content-color"> (2 artículos) </span></h3>
+                <a href="https://themes.pixelstrap.com/pwa/kartify/empty-cart.html" class="color-theme-color fw-normal fs-14 mt-1">Vaciar todo</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- cart section starts -->
+    <section class="section-sm-t-space">
+        <div class="custom-container">
+            <div class="row gy-3 gx-0">
+                <div class="col-12">
+                    <div class="product-box vertical-product">
+                        <a href="product-details.html" class="product-img">
+                            <img src="assets/images/product/11.png" class="img-fluid" alt="">
+                        </a>
+                        <div class="product-content">
+                            <h6 class="content-color">Apple</h6>
+                            <a href="product-details.html" class="product-top">
+                                <h5 class="title-color white-nowrap">Sistema de TV inteligente</h5>
+                            </a>
+                            <div class="bottom-content cart-content">
+                                <h5 class="price">$450</h5>
+                                <div class="plus-minus">
+                                    <i class="iconsax icon sub" data-icon="minus"> </i>
+                                    <input type="number" disabled value="1" min="1" max="10">
+                                    <i class="iconsax icon add" data-icon="add"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-icon">
+                            <i class="iconsax icon close" data-icon="add"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="product-box vertical-product">
+                        <a href="product-details.html" class="product-img">
+                            <img src="assets/images/product/12.png" class="img-fluid" alt="">
+                        </a>
+                        <div class="product-content">
+                            <h6 class="content-color">Gadgets</h6>
+                            <a href="product-details.html" class="product-top">
+                                <h5 class="title-color white-nowrap">Última cámara inteligente</h5>
+                            </a>
+                            <div class="bottom-content cart-content">
+                                <h5 class="price">$450</h5>
+                                <div class="plus-minus">
+                                    <i class="iconsax icon sub" data-icon="minus"> </i>
+                                    <input type="number" disabled value="1" min="1" max="10">
+                                    <i class="iconsax icon add" data-icon="add"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="close-icon">
+                            <i class="iconsax icon close" data-icon="add"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="custom-container">
+            <div class="promo-code position-relative">
+                <input type="email" class="form-control code-form-control" placeholder="Aplicar código promocional">
+                <a href="cart.html#" class="btn btn-small theme-btn apply-btn fw-medium mt-0">Aplicar</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="custom-container">
+            <div class="title mb-2">
+                <h3>Detalles del precio</h3>
+            </div>
+            <div class="bill-box">
+                <div class="bill-box-content">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="fw-medium content-color">Precio (2 artículos)</h5>
+                        <h5 class="fw-medium title-color">$900.00</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2">
+                        <h5 class="fw-medium content-color">Descuento</h5>
+                        <h5 class="fw-medium title-color">$100.00</h5>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between pt-2">
+                        <h5 class="fw-medium content-color">Cargos de envío</h5>
+                        <h5 class="fw-medium error-color">$100.00</h5>
+                    </div>
+
+                    <div class="total-amount">
+                        <h5 class="fw-medium title-color">Monto total</h5>
+                        <h4 class="fw-medium theme-color">$900.00</h4>
+                    </div>
+                </div>
+            </div>
+            <h6 class="color-theme-color fw-medium mt-2">Ahorrarás $999 en este pedido</h6>
+        </div>
+    </section>
+
+    <div class="secure-payment-wrapper mt-24">
+        <img class="img-fluid" src="assets/images/svg/secure.svg" alt="secure">
+        <p>Pagos seguros y protegidos. Devoluciones fáciles. 100% productos auténticos.</p>
+    </div>
+
+    <section class="section-lg-b-space">
+        <div class="custom-container">
+            <div class="title">
+                <h3>Los más vendidos</h3>
+                <a href="cart.html#" class="see-all">Ver todo</a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="assets/images/product/1.png" class="img-fluid img" alt="">
+                            <div class="like-icon animate ">
+                                <img class="img-fluid icon outline-icon" src="assets/images/svg/heart-outline.svg"
+                                    alt="">
+                                <img class="img-fluid icon fill-icon" src="assets/images/svg/heart-fill.svg" alt="">
+                                <div class="effect-group">
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <a href="cart.html" class="add-icon">
+                                <i class="iconsax" data-icon="add"></i>
+                            </a>
+                            <h6 class="content-color white-nowrap">Móvil</h6>
+                            <a href="product-details.html">
+                                <h5 class="title-color fw-medium white-nowrap mt-1">Último teléfono móvil inteligente</h5>
+                            </a>
+                            <ul class="rating-list">
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-outline.svg" alt="star">
+                                </li>
+                            </ul>
+                            <div class="bottom-content">
+                                <h5 class="price">$320</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="assets/images/product/2.png" class="img-fluid img" alt="">
+                            <div class="like-icon animate active inactive">
+                                <img class="img-fluid icon outline-icon" src="assets/images/svg/heart-outline.svg"
+                                    alt="">
+                                <img class="img-fluid icon fill-icon" src="assets/images/svg/heart-fill.svg" alt="">
+                                <div class="effect-group">
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-content">
+                            <a href="cart.html" class="add-icon">
+                                <i class="iconsax" data-icon="add"></i>
+                            </a>
+
+                            <a href="product-details.html">
+                                <h6 class="content-color white-nowrap">Altavoz</h6>
+                                <h5 class="title-color fw-medium white-nowrap mt-1">Sistema de audio inalámbrico</h5>
+                            </a>
+                            <ul class="rating-list">
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-outline.svg" alt="star">
+                                </li>
+                            </ul>
+                            <div class="bottom-content">
+                                <h5 class="price">$120</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="assets/images/product/3.png" class="img-fluid img" alt="">
+                            <div class="like-icon animate ">
+                                <img class="img-fluid icon outline-icon" src="assets/images/svg/heart-outline.svg"
+                                    alt="">
+                                <img class="img-fluid icon fill-icon" src="assets/images/svg/heart-fill.svg" alt="">
+                                <div class="effect-group">
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <a href="cart.html" class="add-icon">
+                                <i class="iconsax" data-icon="add"></i>
+                            </a>
+                            <h6 class="content-color white-nowrap">Portátil</h6>
+                            <a href="product-details.html">
+                                <h5 class="title-color fw-medium white-nowrap mt-1">Último portátil inteligente</h5>
+                            </a>
+                            <ul class="rating-list">
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-outline.svg" alt="star">
+                                </li>
+                            </ul>
+                            <div class="bottom-content">
+                                <h5 class="price">$550</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <div class="product-img">
+                            <img src="assets/images/product/4.png" class="img-fluid img" alt="">
+                            <div class="like-icon animate active inactive">
+                                <img class="img-fluid icon outline-icon" src="assets/images/svg/heart-outline.svg"
+                                    alt="">
+                                <img class="img-fluid icon fill-icon" src="assets/images/svg/heart-fill.svg" alt="">
+                                <div class="effect-group">
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                    <span class="effect"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-content">
+                            <a href="cart.html" class="add-icon">
+                                <i class="iconsax" data-icon="add"></i>
+                            </a>
+
+                            <a href="product-details.html">
+                                <h6 class="content-color white-nowrap">Auriculares</h6>
+                                <h5 class="title-color fw-medium white-nowrap mt-1">Auriculares Bluetooth inalámbricos</h5>
+                            </a>
+                            <ul class="rating-list">
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-fill.svg" alt="star">
+                                </li>
+                                <li>
+                                    <img src="assets/images/svg/star-outline.svg" alt="star">
+                                </li>
+                            </ul>
+                            <div class="bottom-content">
+                                <h5 class="price">$50 </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart buttons start -->
+    <div class="cart-btns">
+        <div>
+            <h6 class="content-color fw-medium"><del>$1000.00</del></h6>
+            <h4 class="fw-medium title-color">$900.00</h4>
+        </div>
+        <a href="https://themes.pixelstrap.com/pwa/kartify/checkout.html" class="btn btn-small theme-btn">
+            <i class="iconsax me-2" data-icon="bank-card"></i>
+            Realizar pedido
+        </a>
+    </div>
+    <!-- cart buttons end -->
+
+    <!-- bottom panel start -->
+    <ul class="bottom-menu">
+        <li>
+            <a href="home.html">
+                <i class="iconsax text-content" data-icon="home-2"></i>
+                <h6>Inicio</h6>
+            </a>
+        </li>
+
+        <li>
+            <a href="category.html">
+                <i class="iconsax text-content" data-icon="grid-apps"></i>
+                <h6>Categoría</h6>
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html" class="active">
+                <i class="iconsax text-content" data-icon="shopping-cart"></i>
+                <h6>Carrito</h6>
+            </a>
+        </li>
+
+        <li>
+            <a href="wishlist.html">
+                <i class="iconsax text-content" data-icon="heart"></i>
+                <h6>Favoritos</h6>
+            </a>
+        </li>
+
+        <li>
+            <a href="account.html">
+                <i class="iconsax text-content" data-icon="user-2"></i>
+                <h6>Perfil</h6>
+            </a>
+        </li>
+    </ul>
+    <!-- bottom panel end -->
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header sidebar-header">
+            <div class="sidebar-logo">
+                <img class="img-fluid logo" src="assets/images/logo/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <a href="edit-profile.html" class="profile-part">
+                <img class="img-fluid profile-pic" src="assets/images/avatar/1.png" alt="p8">
+                <div>
+                    <h3>Smitha Williams</h3>
+                    <span>Editar cuenta</span>
+                </div>
+            </a>
+            <ul class="link-section switch-section">
+                <li>
+                    <a href="home.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="home-2"></i>
+                        <h3>Inicio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="grid-apps"></i>
+                        <h3>Categoría</h3>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="cart.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="shopping-cart"></i>
+
+                        <h3>Carrito</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="wishlist.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="heart"></i>
+                        <h3>Favoritos</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="user-2"></i>
+                        <h3>Perfil</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="page-listing.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="book-closed"> </i>
+                        <h3>Plantillas</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="elements-page.html" class="pages">
+                        <i class="iconsax sidebar-icon icon" data-icon="document-text-1"> </i>
+                        <h3> Elementos</h3>
+                    </a>
+                </li>
+
+                <li>
+                    <div class="pages">
+                        <i class="iconsax sidebar-icon" data-icon="repeat"> </i>
+                        <h3>RTL</h3>
+                    </div>
+                    <div class="switch-btn">
+                        <input id="dir-switch" type="checkbox">
+                    </div>
+                </li>
+
+                <li>
+                    <div class="pages">
+                        <i class="iconsax sidebar-icon" data-icon="brush-3"> </i>
+                        <h3>Oscuro</h3>
+                    </div>
+                    <div class="switch-btn">
+                        <input id="dark-switch" type="checkbox">
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="bottom-sidebar">
+                <a href="login.html" class="pages">
+                    <i class="iconsax sidebar-icon" data-icon="logout-2"> </i>
+                    <h3>Cerrar sesión</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- iconsax icon -->
+    <script src="assets/js/iconsax-icon.js"></script>
+
+    <!-- template-setting js -->
+    <script src="assets/js/template-setting.js"></script>
+
+    <!-- remove-item js -->
+    <script src="assets/js/remove-item.js"></script>
+
+    <!-- quantity js -->
+    <script src="assets/js/quantity.js"></script>
+
+    <!-- script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
